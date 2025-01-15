@@ -9,6 +9,14 @@
  *
  */
 
-class Animal {}
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  getName() {
+    return `My name is ${this.name}`;
+  }
+}
 
 export { Animal };

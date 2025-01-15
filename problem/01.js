@@ -10,7 +10,17 @@
  */
 
 // TODO: 전역 변수 선언
+let global = "Global";
 
-function scopeChainOne() {}
+function scopeChainOne() {
+  let b = "Local";
+  function inner() {
+    let a = global;
+    return  `${a} - ${b}`;
+  }
+
+  return inner()
+
+}
 
 export { global, scopeChainOne };

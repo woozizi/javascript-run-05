@@ -7,10 +7,12 @@
  *
  */
 
-function sum() {}
+function sum(a, b, c) {
+  return a+b+c;
+}
 
 // TODO: 아래 코드를 작성하세요.
-let callResult;
-let applyResult;
+let callResult = sum.call(null, 1,2,3);
+let applyResult = sum.apply(null, [1,2,3]);
 
 export { sum, callResult, applyResult };
